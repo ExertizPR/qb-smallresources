@@ -57,7 +57,7 @@ local function TriggerCruiseControl()
                     if not IsTurningOrHandBraking() and IsVehicleOnAllWheels(GetVehicle()) and GetVehicleSpeed() < CruisedSpeed then
                         SetVehicleForwardSpeed(GetVehicle(), CruisedSpeed)
                     end
-                    if IsControlJustPressed(1, 246) then
+                    if IsControlJustPressed(1, 217) then
                         TriggerEvent('seatbelt:client:ToggleCruise')
                         CruisedSpeed = GetVehicleSpeed() -- Comment me for mp/h
                         --CruisedSpeedKm = TransformToKm(CruisedSpeed) -- Uncomment me for km/h
@@ -88,4 +88,4 @@ RegisterCommand('togglecruise', function()
     end
 end, false)
 
-RegisterKeyMapping('togglecruise', 'Toggle Cruise Control', 'keyboard', 'Y')
+RegisterKeyMapping('togglecruise', 'Toggle Cruise Control', 'keyboard', 'CAPSLOCK')
