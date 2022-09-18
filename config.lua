@@ -4,26 +4,26 @@ Config.MaxHeight = 5.0
 Config.MaxLength = 5.0
 Config.DamageNeeded = 100.0
 Config.IdleCamera = true
-Config.EnableProne = true
+Config.EnableProne = false
 Config.JointEffectTime = 60
 Config.RemoveWeaponDrops = true
 Config.RemoveWeaponDropsTimer = 25
-Config.DefaultPrice = 20 -- Default price for the carwash
+Config.DefaultPrice = 350 -- Default price for the carwash
 Config.DirtLevel = 0.1 -- Threshold for the dirt level to be counted as dirty
 Config.DisableAmbience = false -- Disabled distance sirens, distance car alarms, etc
 
 Config.Disable = {
-    disableHudComponents = {1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
-    disableControls = {37}, -- Controls: https://docs.fivem.net/docs/game-references/controls/
-    displayAmmo = true -- false disables ammo display
+    disableHudComponents = {1, 2, 3, 4, 6, 7, 8, 9, 13, 14, 16, 17, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
+    disableControls = {36, 37}, -- Controls: https://docs.fivem.net/docs/game-references/controls/
+    displayAmmo = false -- false disables ammo display
 }
 
 Config.Density = {
-    ['parked'] = 0.8,
-    ['vehicle'] = 0.8,
-    ['multiplier'] = 0.8,
-    ['peds'] = 0.8,
-    ['scenario'] = 0.8,
+    ['parked'] = 0.0,
+    ['vehicle'] = 0.0,
+    ['multiplier'] = 0.5,
+    ['peds'] = 0.6,
+    ['scenario'] = 0.2
 }
 
 ConsumablesEat = {
